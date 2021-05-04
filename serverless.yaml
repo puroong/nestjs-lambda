@@ -1,0 +1,23 @@
+service: nestjs-lambda
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-northeast-2
+
+custom:
+  webpack:
+    webpackConfig: webpack.config.js
+    includeModules: true
+
+functions:
+  main:
+    handler: src/lambda.handler
+    events:
+      - http:
+          method: any
+          path: /{any+}
