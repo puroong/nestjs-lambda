@@ -13,9 +13,6 @@ custom:
   webpack:
     webpackConfig: webpack.config.js
     includeModules: true
-    packagerOptions:
-      scripts:
-        - npm_config_platform=linux npm_config_arch=x64 npm install bcrypt
 
 functions:
   main:
