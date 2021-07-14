@@ -27,9 +27,11 @@
     "aws-lambda": "^1.0.6",
     "aws-serverless-express": "^3.4.0",
     "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.6",
+    "serverless-plugin-typescript": "^1.1.9"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",

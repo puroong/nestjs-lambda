@@ -1,18 +1,13 @@
 service: nestjs-lambda
 
 plugins:
-  - serverless-webpack
+  - serverless-plugin-typescript
   - serverless-offline
 
 provider:
   name: aws
   runtime: nodejs14.x
   region: ap-northeast-2
-
-custom:
-  webpack:
-    webpackConfig: webpack.config.js
-    includeModules: true
 
 functions:
   main:
